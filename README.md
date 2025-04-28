@@ -25,7 +25,7 @@ A finalidade deste trabalho foi modificar o código do Ohmímetro, feito pelo pr
 1. **Clonar o repositório**: Clone o repositório utilizando o comando Git no terminal:
    
    ```bash
-   git clone https://github.com/Ukobir/Jogo-da-Mem-ria
+   https://github.com/Ukobir/Ohmimeter
    ```
 2. Importar o código no VS Code com a extensão do Raspberry pi pico.
 3. Compilar o código.
