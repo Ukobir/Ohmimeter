@@ -18,7 +18,7 @@ A finalidade deste trabalho foi modificar o código do Ohmímetro, feito pelo pr
 2. **VS Code**: Instale o Visual Studio Code, um editor de código recomendado para desenvolvimento com o Raspberry Pi Pico.
 3. **Pico SDK**: Baixe e configure o SDK do Raspberry Pi Pico, conforme as instruções da documentação oficial.
 4. **Conexão USB**: Certifique-se de que a Bitdoglab esteja conectado via USB quando for testar o código.
-5. **Bitdoglab**
+5. Tenha acesso a placa **Bitdoglab**.
 
 ### Passos para Execução
 
