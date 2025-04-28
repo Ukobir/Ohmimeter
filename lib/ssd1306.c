@@ -318,7 +318,7 @@ void tela2(ssd1306_t *ssd, char res[5], int um, int dois, int tres)
       }
     }
   }
-
+  
   ssd1306_draw_string(ssd, codigo[um], 31, 6);    // Desenha uma string
   ssd1306_draw_string(ssd, codigo[dois], 31, 16); // Desenha uma string
   ssd1306_draw_string(ssd, codigo[tres], 31, 30); // Desenha uma string
