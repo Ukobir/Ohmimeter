@@ -77,6 +77,20 @@
       "top": -19.2,
       "left": -134.4,
       "attrs": { "text": "PB B" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": -70.6,
+      "left": -144,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text4",
+      "top": -105.6,
+      "left": -124.8,
+      "attrs": { "text": "PB A\n" }
     }
   ],
   "connections": [
@@ -88,12 +102,15 @@
     [ "oled1:GND", "gnd1:GND", "black", [ "v-38.4", "h-57.6" ] ],
     [ "btn2:1.r", "pico:GP6", "limegreen", [ "v0" ] ],
     [ "btn2:2.r", "pico:GND.3", "black", [ "h38.6", "v19.4" ] ],
-    [ "pico:GP28", "bb1:11b.j", "blue", [ "h0" ] ],
+    [ "pico:GP28", "bb1:11b.j", "#8f4814", [ "h0" ] ],
     [ "pico:GND.6", "bb1:17b.j", "black", [ "h0" ] ],
-    [ "r1:1", "bb1:11b.i", "", [ "$bb" ] ],
-    [ "r1:2", "bb1:17b.i", "", [ "$bb" ] ],
+    [ "pico:3V3", "r2:1", "red", [ "h29.11", "v-38.4" ] ],
+    [ "btn1:2.r", "pico:GND.3", "black", [ "h29", "v96.2" ] ],
+    [ "pico:GP5", "btn1:1.r", "limegreen", [ "h-28.8", "v-48" ] ],
     [ "r2:1", "bb1:5b.h", "", [ "$bb" ] ],
-    [ "r2:2", "bb1:11b.h", "", [ "$bb" ] ]
+    [ "r2:2", "bb1:11b.h", "", [ "$bb" ] ],
+    [ "r1:1", "bb1:11b.i", "", [ "$bb" ] ],
+    [ "r1:2", "bb1:17b.i", "", [ "$bb" ] ]
   ],
   "dependencies": {}
 }

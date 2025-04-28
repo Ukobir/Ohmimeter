@@ -52,7 +52,7 @@ void gpio_irq_handler(uint gpio, uint32_t events)
     else if (gpio == Botao_A)
     {
       flag_tela = !flag_tela;
-    }
+    } 
   }
 }
 // Declaração das funções para converter a resistência e adequala ao código de cores
