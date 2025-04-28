@@ -5,7 +5,15 @@
 #define WIDTH 128
 #define HEIGHT 64
 
-typedef enum {
+#define I2C_PORT i2c1
+#define I2C_SDA 14
+#define I2C_SCL 15
+#define endereco 0x3C
+
+
+
+typedef enum
+{
   SET_CONTRAST = 0x81,
   SET_ENTIRE_ON = 0xA4,
   SET_NORM_INV = 0xA6,
@@ -25,7 +33,8 @@ typedef enum {
   SET_CHARGE_PUMP = 0x8D
 } ssd1306_command_t;
 
-typedef struct {
+typedef struct
+{
   uint8_t width, height, pages, address;
   i2c_inst_t *i2c_port;
   bool external_vcc;
@@ -47,3 +56,6 @@ void ssd1306_hline(ssd1306_t *ssd, uint8_t x0, uint8_t x1, uint8_t y, bool value
 void ssd1306_vline(ssd1306_t *ssd, uint8_t x, uint8_t y0, uint8_t y1, bool value);
 void ssd1306_draw_char(ssd1306_t *ssd, char c, uint8_t x, uint8_t y);
 void ssd1306_draw_string(ssd1306_t *ssd, const char *str, uint8_t x, uint8_t y);
+void initDisplay(ssd1306_t *ssd);
+void tela1(ssd1306_t *ssd, char ADC[5], char Rx[5]);
+void tela2(ssd1306_t *ssd, char res[5], int um, int dois, int tres);
