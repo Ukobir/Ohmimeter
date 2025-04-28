@@ -17,8 +17,8 @@ A finalidade deste trabalho foi modificar o código do Ohmímetro, feito pelo pr
 1. **Git**: Certifique-se de ter o Git instalado no seu sistema. 
 2. **VS Code**: Instale o Visual Studio Code, um editor de código recomendado para desenvolvimento com o Raspberry Pi Pico.
 3. **Pico SDK**: Baixe e configure o SDK do Raspberry Pi Pico, conforme as instruções da documentação oficial.
-4. **Simulador Wokwi**: Utilize o simulador de eletrônica Wokwi para simular o projeto, caso não tenha acesso à placa física.
-5. **Conexão USB**: Certifique-se de que o Raspberry Pi Pico W esteja conectado via USB quando for testar o código.
+4. **Conexão USB**: Certifique-se de que a Bitdoglab esteja conectado via USB quando for testar o código.
+5. Tenha acesso a placa **Bitdoglab**.
 
 ### Passos para Execução
 
@@ -27,8 +27,8 @@ A finalidade deste trabalho foi modificar o código do Ohmímetro, feito pelo pr
    ```bash
    git clone https://github.com/Ukobir/Jogo-da-Mem-ria
    ```
-2. Abrir no VS Code: Abra a pasta clonada no VS Code e no terminal do VS Code, vá até a pasta do projeto.
-4. Compilar o código.
+2. Importar o código no VS Code com a extensão do Raspberry pi pico.
+3. Compilar o código.
 
 ## Testes Realizados
 Foi feito diversos testes para garantir a funcionamento devido da atividade. Além de que foi organizado o código conforme explicado em aula.
