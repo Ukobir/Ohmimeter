@@ -4,7 +4,7 @@
   <br>
     <img width="200px" src="https://github.com/Ukobir/Jogo-da-Mem-ria/blob/main/imagens/logo.png">
   <br>
-  Atividade de Revisão
+  Ohmímetro com conversão para valores comerciais E24
   <br>
 </h1>
 
