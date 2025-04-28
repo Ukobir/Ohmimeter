@@ -28,7 +28,7 @@ A finalidade deste trabalho foi modificar o código do Ohmímetro, feito pelo pr
    https://github.com/Ukobir/Ohmimeter
    ```
 2. Importar o código no VS Code com a extensão do Raspberry pi pico.
-3. Compilar o código.
+3. Compilar o código e carregar o código na **BitDogLab**.
 
 ## Testes Realizados
 Foi feito diversos testes para garantir a funcionamento devido da atividade. Além de que foi organizado o código conforme explicado em aula.
