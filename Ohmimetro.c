@@ -32,7 +32,6 @@ float c_angular = 1.035;
 
 ssd1306_t ssd;
 bool flag_tela = false; // Flag da tela
-
 // Variáveis utilizada para o debouncing
 static volatile uint32_t passado = 0;
 uint32_t tempo_atual;
@@ -56,7 +55,6 @@ void gpio_irq_handler(uint gpio, uint32_t events)
     }
   }
 }
-
 // Declaração das funções para converter a resistência e adequala ao código de cores
 int multiplicador(float Rx);
 void resto(int i, int *pri, int *segu, int *terc);

@@ -249,17 +249,67 @@ void tela1(ssd1306_t *ssd, char ADC[5], char Rx[5])
 
 // Variável do código de cores
 const char codigo[10][15] = {"Preto", "Marrom", "Vermelho", "Laranja",
-                            "Amarelo", "Verde", "Azul", "Violeta",
-                            "Cinza", "Branco"};
+                             "Amarelo", "Verde", "Azul", "Violeta",
+                             "Cinza", "Branco"};
 
 //  Atualiza o conteúdo do display com animações
 void tela2(ssd1306_t *ssd, char res[5], int um, int dois, int tres)
 {
-  ssd1306_draw_string(ssd, codigo[um], 16, 15); // Desenha uma string
-  ssd1306_draw_string(ssd, codigo[dois], 16, 25); // Desenha uma string
-  ssd1306_draw_string(ssd, codigo[tres], 16, 35); // Desenha uma string
+  ssd1306_line(ssd, 0, 5, 12, 5, true);
+  ssd1306_line(ssd, 14, 7, 14, 15, true);
+  ssd1306_line(ssd, 12, 17, 9, 17, true);
+  ssd1306_line(ssd, 10, 18, 10, 38, true);
+  ssd1306_line(ssd, 9, 39, 12, 39, true);
+  ssd1306_line(ssd, 14, 41, 14, 48, true);
+  ssd1306_line(ssd, 0, 50, 12, 50, true);
+  ssd1306_line(ssd, 6, 51, 6, 57, true);
+  ssd1306_line(ssd, 0, 59, 4, 59, true);
+  ssd1306_line(ssd, 2, 54, 2, 51, true);
+  ssd1306_line(ssd, 0, 55, 1, 55, true);
+  ssd1306_line(ssd, 2, 4, 2, 0, true);
+  ssd1306_line(ssd, 6, 0, 6, 4, true);
+  ssd1306_rect(ssd, 10, 0, 13, 3, true, true);
+  ssd1306_rect(ssd, 20, 0, 9, 3, true, true);
+  ssd1306_rect(ssd, 31, 0, 9, 3, true, true);
+  ssd1306_pixel(ssd, 12, 6, true);
+  ssd1306_pixel(ssd, 13, 6, true);
+  ssd1306_pixel(ssd, 13, 7, true);
+  ssd1306_pixel(ssd, 13, 15, true);
+  ssd1306_pixel(ssd, 13, 16, true);
+  ssd1306_pixel(ssd, 12, 16, true);
+  ssd1306_pixel(ssd, 12, 40, true);
+  ssd1306_pixel(ssd, 13, 40, true);
+  ssd1306_pixel(ssd, 13, 41, true);
+  ssd1306_pixel(ssd, 13, 48, true);
+  ssd1306_pixel(ssd, 13, 49, true);
+  ssd1306_pixel(ssd, 12, 49, true);
+  ssd1306_pixel(ssd, 5, 57, true);
+  ssd1306_pixel(ssd, 5, 58, true);
+  ssd1306_pixel(ssd, 4, 58, true);
+  ssd1306_pixel(ssd, 1, 54, true);
+  ssd1306_line(ssd, 22, 9, 23, 9, true);
+  ssd1306_line(ssd, 22, 12, 23, 12, true);
+  ssd1306_line(ssd, 22, 19, 23, 19, true);
+  ssd1306_line(ssd, 22, 22, 23, 22, true);
+  ssd1306_line(ssd, 22, 31, 23, 31, true);
+  ssd1306_line(ssd, 22, 34, 23, 34, true);
+  ssd1306_pixel(ssd, 22, 8, true);
+  ssd1306_pixel(ssd, 22, 13, true);
+  ssd1306_pixel(ssd, 22, 18, true);
+  ssd1306_pixel(ssd, 22, 23, true);
+  ssd1306_pixel(ssd, 22, 30, true);
+  ssd1306_pixel(ssd, 22, 35, true);
+  ssd1306_line(ssd, 19, 10, 24, 10, true);
+  ssd1306_line(ssd, 19, 11, 24, 11, true);
+  ssd1306_line(ssd, 19, 20, 24, 20, true);
+  ssd1306_line(ssd, 19, 21, 24, 21, true);
+  ssd1306_line(ssd, 19, 32, 24, 32, true);
+  ssd1306_line(ssd, 19, 33, 24, 33, true);
 
-  ssd1306_draw_string(ssd, "Comercial", 50, 47); // Desenha uma string
+  ssd1306_draw_string(ssd, codigo[um], 31, 6);   // Desenha uma string
+  ssd1306_draw_string(ssd, codigo[dois], 31, 16); // Desenha uma string
+  ssd1306_draw_string(ssd, codigo[tres], 31, 30); // Desenha uma string
+  ssd1306_draw_string(ssd, "Comercial", 50, 47);  // Desenha uma string
   ssd1306_draw_string(ssd, res, 59, 55);          // Desenha uma string
-  ssd1306_send_data(ssd);                        // Atualiza o display
+  ssd1306_send_data(ssd);                         // Atualiza o display
 }
