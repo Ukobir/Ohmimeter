@@ -17,8 +17,8 @@ A finalidade deste trabalho foi modificar o código do Ohmímetro, feito pelo pr
 1. **Git**: Certifique-se de ter o Git instalado no seu sistema. 
 2. **VS Code**: Instale o Visual Studio Code, um editor de código recomendado para desenvolvimento com o Raspberry Pi Pico.
 3. **Pico SDK**: Baixe e configure o SDK do Raspberry Pi Pico, conforme as instruções da documentação oficial.
-4. **Simulador Wokwi**: Utilize o simulador de eletrônica Wokwi para simular o projeto, caso não tenha acesso à placa física.
-5. **Conexão USB**: Certifique-se de que o Raspberry Pi Pico W esteja conectado via USB quando for testar o código.
+4. **Conexão USB**: Certifique-se de que a Bitdoglab esteja conectado via USB quando for testar o código.
+5. **Bitdoglab**
 
 ### Passos para Execução
 
